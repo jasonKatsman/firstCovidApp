@@ -1,0 +1,65 @@
+.outerBorder {
+  text-align: center;
+  color: #EDEEF2;
+  margin: 0;
+  padding: 0;
+
+  .containerTitle {
+    font-size: 25px;
+    margin: 0;
+    color: #EDEEF2;
+  }
+
+  .containerUpdated {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  .infoContainer {
+    transition: 0.5s;
+    h6{
+      font-size: 17px;
+    }
+    &:hover {
+      border-radius: 1px;
+      transition: 2s;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .containerSubTitle {
+      border-top: 1px solid gray;
+      color: #EDEEF2;
+      padding-top: 5px;
+      margin: 0;
+    }
+
+    .containerStats {
+      margin: 0;
+      font-size: 45px;
+      font-weight: bold;
+      padding: 0 0 25px;
+      &.cases {
+        color: #A1F09D;
+      }
+
+      &.dead {
+        color: #E24949;
+      }
+
+      &.critical {
+        color: #FA932F;
+      }
+
+      &.recovered {
+        color: #6794FA;
+        padding-bottom: 20px;
+      }
+
+      &.active {
+        color: yellow;
+      }
+    }
+  }
+}

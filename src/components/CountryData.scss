@@ -1,0 +1,34 @@
+.countryDataContainer {
+
+  align-self: center;
+  text-align: center;
+  .countryDataHeader {
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+      color:silver;
+    }
+  }
+
+  .countryDataInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .countryField {
+      flex-grow: 1;
+      h2 {
+        margin: 0;
+      }
+      p{
+        margin: 0;
+        font-size: 20px;
+      }
+    }
+  }
+}

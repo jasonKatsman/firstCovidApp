@@ -1,5 +1,13 @@
 body {
+  background-image: linear-gradient(to bottom,
+  rgba(30, 30, 30 , 0.6) 0%,
+  rgba(30, 30, 30 , 0.8) 100%),
+  url('./images/abstract-1779559_1920.jpg');
+  background-size:cover;
+  background-attachment:fixed;
+  background-color: #3B3B3B;
   margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

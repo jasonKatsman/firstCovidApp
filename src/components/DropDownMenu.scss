@@ -1,0 +1,79 @@
+.dropDownContainer {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  .dropButton {
+    cursor: pointer;
+    margin: 0;
+    border-bottom: 2px solid #575757;
+    border-top: 1px solid #575757;
+    border-radius: 11px;
+    padding: 5px 0 5px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+      margin: 0;
+      padding: 0 11px 0 0;
+      color:white;
+    }
+
+    .arrow-down {
+
+      transition: 0.2s;
+      width: 25px;
+      height: 25px;
+    }
+
+    .arrow-up {
+      transition: 0.4s;
+      transform: rotate(180deg);
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .dropList {
+    animation: fadeInAnimation ease 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  color: white;
+    background-color: #2A2A2A;
+    margin-top: 38px;
+    position: absolute;
+    width: 115px;
+    border-bottom: 1px solid grey;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    ul {
+      margin: 0;
+      padding: 0 15px 15px;
+
+      li {
+        padding: 12px 5px 5px;
+        font-size: 15px;
+        list-style: none;
+        border-bottom: whitesmoke 1px solid;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover{
+          transition: 0.5s;
+          color:#EA3E3E;
+          border-bottom: #EA3E3E 1px solid;
+        }
+      }
+    }
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

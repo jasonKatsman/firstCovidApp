@@ -1,0 +1,22 @@
+.mapPage{
+  background-color: rgba(59, 59, 59, 0.3);
+  height: 100vh;
+  overflow: hidden;
+
+  .mapContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    height: 100%;
+  }
+  .toolTip{
+    text-align: center;
+    p{
+      margin:0;
+      font-size: 15px;
+    }
+    h2{
+      margin: 0;
+    }
+  }
+}

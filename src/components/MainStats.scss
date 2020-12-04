@@ -1,0 +1,154 @@
+.mainStatsContainer {
+  z-index: 12;
+  text-align: center;
+  background-color: rgba(59, 59, 59, 0.1);
+  position: relative;
+  border-radius: 25px;
+
+  .outerContainer {
+    border-radius: 25px;
+    border-top: 2px solid #5A5A5A;
+    align-items: center;
+    padding: 5px 15px;
+    height: 45px;
+
+    .searchCountry {
+      border-radius: 5px;
+      max-width: 350px;
+      min-width: 85px;
+      color: silver;
+      border: 2px solid rgba(52, 52, 52, 0.8);
+      font-weight: bold;
+      font-size: 18px;
+      height: 35px;
+      background-color: rgba(0, 0, 0, 0.3);
+      text-align: center;
+
+      &::placeholder {
+        color: rgba(256, 256, 256, 0.8);
+        text-align: center;
+      }
+
+      &:focus {
+
+        outline: none;
+        transition: 0.2s;
+        background-color: rgba(0, 0, 0,0.5);
+      }
+    }
+  }
+
+
+  .innerContainer {
+    background-color: rgba(59, 59, 59, 0.5);
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    border: 1px solid #3B3B3B;
+    border-bottom: 1px solid dimgray;
+    border-radius: 5px;
+
+    .mainStatTable {
+      width: 100%;
+      .dataRow {
+        cursor: pointer;
+        transition: 0.2s;
+        text-decoration: none;
+        &:hover {
+          transition: 0.2s;
+          background-color: rgba(196, 41, 41, 0.4);
+          text-decoration: underline;
+          text-decoration-color:  rgba(256, 256, 256, 0.9);
+        }
+      }
+
+      .headerRow {
+        th {
+          cursor: pointer;
+          position: sticky;
+          top: 0;
+          font-size: 18px;
+          font-weight: bold;
+          //background-color: #2A2A2A;
+          background-color: rgba(26, 26, 26, 0.9);
+          &:hover {
+            transition: 0.2s;
+            background-color:rgba(16, 16, 16, 1) ;
+
+          }
+        }
+      }
+      tbody {
+        overflow: scroll;
+      }
+
+      tr {
+        font-size: 16px;
+        background-color: transparent;
+        color: white;
+
+        td {
+          border: none;
+        }
+      }
+
+      tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.5);
+
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.2);
+
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 125px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+
+}
+
+.country {
+  color: lavender;
+}
+
+.cases {
+  color: #A1F09D;
+}
+
+.dead {
+  color: #E24949;
+}
+
+.critical {
+  color: #FA932F;
+}
+
+.recovered {
+  color: #6794FA;
+}
+
+.tests {
+  color: yellow;
+}
+
+.population {
+  color: lightblue;
+}

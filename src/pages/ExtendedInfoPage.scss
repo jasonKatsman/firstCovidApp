@@ -1,0 +1,46 @@
+.InfoPage {
+  position: relative;
+  display: flex;
+  //justify-content: center;
+  height: 100vh;
+
+
+  .InfoPageContainer {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    color: whitesmoke;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .InfoGraph {
+    }
+  }
+
+  .CountryData {
+    border-radius: 15px;
+    background-color: rgba(29, 29, 29, 0.8);
+    border: 2px solid rgba(49, 49, 49, 1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .InfoPage {
+    display: flex;
+    height: 100vh;
+    background-color: rgba(59, 59, 59, 0.3);
+
+    .InfoPageContainer {
+      padding-right: 5px;
+      padding-left: 5px;
+
+      .InfoGraph {
+
+      }
+    }
+
+  }
+}

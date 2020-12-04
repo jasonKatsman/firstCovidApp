@@ -1,0 +1,85 @@
+.AboutPage {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  //background-color: rgba(59, 59, 59, 0.3);
+  .AboutContainer {
+
+    padding-top: 10px;
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    //overflow: scroll;
+    //position: fixed;
+    h1 {
+      text-align: center;
+      color: silver;
+    }
+
+    @media screen and (min-width: 650px) {
+      width: 80%;
+    }
+    display: flex;
+    flex-direction: column;
+
+    .textContainer {
+      overflow: auto;
+
+      &.fast {
+        animation: slideToMiddle ease 1.4s;
+      }
+
+      &.normal {
+        animation: slideToMiddle ease 1.8s;
+      }
+
+      &.slow {
+        animation: slideToMiddle ease 2.2s;
+      }
+
+      &.superSlow {
+        animation: slideToMiddle ease 2.6s;
+      }
+
+      background-color: rgba(0, 0, 0, 0.3);
+      padding-left: 10px;
+      padding-bottom: 15px;
+      padding-right: 10px;
+
+      h3 {
+        margin-bottom: 0;
+      }
+
+      &.green {
+        h3 {
+          color: #A1F09D;
+        }
+      }
+
+      &.red {
+        h3 {
+          color: #E24949;
+        }
+      }
+
+      &.orange {
+        h3 {
+          color: #FA932F;
+        }
+      }
+
+      &.yellow {
+        h3 {
+          color: yellow;
+        }
+      }
+
+      &.blue {
+        h3 {
+          color: #6794FA;
+        }
+      }
+    }
+  }
+}
